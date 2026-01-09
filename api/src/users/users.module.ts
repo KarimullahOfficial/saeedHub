@@ -10,6 +10,5 @@ import { UserStore } from 'src/libs';
   imports: [MongooseModule.forFeature([{ name: User.name, schema: UserSchema }])],
   controllers: [UsersController],
   providers: [UsersService,UserStore],
-
 })
 export class UsersModule {}

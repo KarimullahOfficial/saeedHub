@@ -8,10 +8,6 @@ import { UserStore } from '../libs/store/user.store';
 @Module({
   imports: [MongooseModule.forFeature([{ name: User.name, schema: UserSchema }])],
   controllers: [UsersController],
-<<<<<<< HEAD
-  providers: [UsersService,UserStore],
-=======
   providers: [UsersService, UserStore],
->>>>>>> karim-fixed-user
 })
 export class UsersModule {}
